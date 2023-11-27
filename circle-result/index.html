@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    .tablet-show {
+        display: block;
+    }
+    .panel-bottom-menu {
+        position: fixed;
+        width: 100%;
+        height: 7%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .bottom-menu-wrapper {
+        height: 100%;
+    }
+    .flex-row-sb-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    *, *::before, *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .panel-bottom-menu svg.bottom-menu-back {
+        filter: drop-shadow(0 -1px 6px rgba(0, 0, 0, 0.2));
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        height: 100%;
+        transform: translateX(50%);
+        z-index: -1;
+    }
+    svg {
+        vertical-align: middle;
+    }
+    .colm3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .font-s-11 {
+        font-size: 11px;
+    }
+    .align-center {
+        text-align: center;
+    }
+    .second-menu-item {
+        margin-right: -50px;
+    }
+    .circular-menu  {
+        top: 10%;
+    }
+    .circular-menu {
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+    }
+    </style>
+
+  <title>Circular Menu</title>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <meta name="description" content="Circular menu with cool transition effect to get inspired" />
+  <meta name="keywords" content="menu, transition, css3, css, circular menu, web design, share menu, mobile menu" />
+  <meta name="author" content="css-tricks.ir" />
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/prefixed-style.css" />
+
+  <!--[if IE]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="panel-bottom-menu hide tablet-show mobile-show">
+    <div class="bottom-menu-wrapper flex-row-sb-center">
+        <svg class="bottom-menu-back" xmlns="http://www.w3.org/2000/svg" width="768" height="50"
+            viewBox="0 0 768 50">
+            <path d="M-15,0H345c12.855,0,16.965,20,39,20,22.238,0,25.921-20,39-20H828V95H-15V0Z"></path>
+        </svg>
+        <div class="bottom-menu-item align-center colm3">
+            <a href="#">
+                <div>5</div>
+                <div class="font-s-11">درآمد</div> 
+            </a>
+        </div>
+       
+      
+
+
+
+      
+      
+        <div id="circularMenu" class="circular-menu circular-menu-left active">
+
+          <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <i class="fa fa-bars"></i>
+          </a>
+      
+          <menu class="items-wrapper">
+            <a href="#" class="menu-item fa fa-home"></a>
+            <a href="#" class="menu-item fa fa-user"></a>
+            <a href="#" class="menu-item fa fa-pie-chart"></a>
+            <a href="#" class="menu-item fa fa-cog"></a>
+          </menu>
+      
+        </div>  
+      
+      
+      
+     
+
+
+
+        <div class="bottom-menu-item align-center colm3">
+            <a href="#">
+                <div>1</div>
+                <div class="font-s-11">گزارش عملکرد</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
